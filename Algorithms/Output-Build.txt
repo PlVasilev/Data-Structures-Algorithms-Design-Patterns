@@ -1,0 +1,4 @@
+﻿Build started...
+1>------ Build started: Project: 01_Reverse_Array, Configuration: Debug Any CPU ------
+1>01_Reverse_Array -> C:\Users\plamen\Desktop\Algorithms\Fundamentals\06_Ex_Recursion_and_Combinatorial_Problems\01_Reverse_Array\bin\Debug\netcoreapp3.1\01_Reverse_Array.dll
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
