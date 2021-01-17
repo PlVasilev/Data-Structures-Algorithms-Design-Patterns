@@ -14,23 +14,28 @@ namespace _01_Shortest_Path_Dijkstra
 
     class Program
     {
-        private static Dictionary<int, List<Edge>> edgesByNode;
+        private static Dictionary<int, List<Edge>> _edgesByNode;
 
         static void Main(string[] args)
         {
             // var queue = new OrderedBag<int>(Comparer<int>.Create((f, s) => s - f));
-            var e = int.Parse(Console.ReadLine());
+            var e = int.Parse(Console.ReadLine() ?? string.Empty);
 
-            var edgesByNode = ReadGraph(e);
-            var start = int.Parse(Console.ReadLine());
-            var end = int.Parse(Console.ReadLine());
+            _edgesByNode = ReadGraph(e);
+            var start = int.Parse(Console.ReadLine() ?? string.Empty);
+            var end = int.Parse(Console.ReadLine() ?? string.Empty);
 
-            var maxNode = edgesByNode.Keys.Max();
+            var maxNode = _edgesByNode.Keys.Max();
 
             var distances = new int[maxNode + 1];
-            Array.Fill(distances, int.MaxValue);
+            for (int i = 0; i < distances.Length; i++) // // Framework C# code
+                distances[i] = int.MaxValue;
+            
             
             distances[start] = 0;
+
+            var prev = new int[maxNode + 1];
+            prev[start] = -1;
 
             var queue = new OrderedBag<int>(
                 Comparer<int>.Create((f, s) => distances[f] - distances[s])) { start };
@@ -38,9 +43,9 @@ namespace _01_Shortest_Path_Dijkstra
             while (queue.Count > 0)
             {
                 var minNode = queue.RemoveFirst();
-                var children = edgesByNode[minNode];
+                var children = _edgesByNode[minNode];
 
-                if (minNode == end) 
+                if (minNode == end || distances[minNode] == int.MaxValue) 
                     break;
                 
                 foreach (var child in children)
@@ -52,14 +57,31 @@ namespace _01_Shortest_Path_Dijkstra
 
                     var newDistance = child.Weight + distances[minNode];
 
-                    if (newDistance < distances[childNode]) 
-                        distances[childNode] = newDistance;
-
+                    if (newDistance >= distances[childNode]) continue;
+                    distances[childNode] = newDistance;
+                    prev[childNode] = minNode;
                     queue = new OrderedBag<int>(queue, Comparer<int>.Create((f, s) => distances[f] - distances[s]));
                 }
             }
 
+            if (distances[end] == int.MaxValue)
+            {
+                Console.WriteLine("There is no such path.");
+                return;
+            }
+
             Console.WriteLine(distances[end]);
+
+            var path = new Stack<int>();
+
+            var node = end;
+            while (node != -1)
+            {
+                path.Push(node);
+                node = prev[node];
+            }
+
+            Console.WriteLine(string.Join(" ", path));
         }
 
         private static Dictionary<int, List<Edge>> ReadGraph(int e)
@@ -68,7 +90,12 @@ namespace _01_Shortest_Path_Dijkstra
 
             for (int i = 0; i < e; i++)
             {
-                var edgeData = Console.ReadLine().Split(", ").Select(int.Parse).ToArray();
+                var edgeData = Console.ReadLine()?
+                    .Split(new []{", "}, StringSplitOptions.RemoveEmptyEntries)// Framework C# code
+                    .Select(int.Parse)
+                    .ToArray();
+
+                if (edgeData == null) continue;
                 var firstNode = edgeData[0];
                 var secondNode = edgeData[1];
                 var weight = edgeData[2];
