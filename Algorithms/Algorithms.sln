@@ -161,7 +161,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_Shortest_Path_Dijkstra",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02.MST_Kruskal", "Advanced\01. Graphs-Dijkstra-MST\02.MST_Kruskal\02.MST_Kruskal.csproj", "{400DC319-BFC1-4EB9-9AD8-CC5987000FA5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_MST_Prim", "Advanced\01. Graphs-Dijkstra-MST\03_MST_Prim\03_MST_Prim.csproj", "{0C2B5D55-ECF7-4200-872D-B1AB2B03A39C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03_MST_Prim", "Advanced\01. Graphs-Dijkstra-MST\03_MST_Prim\03_MST_Prim.csproj", "{0C2B5D55-ECF7-4200-872D-B1AB2B03A39C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02_Graphs_Bellman_Ford_Longest_Path_in_DAG", "02_Graphs_Bellman_Ford_Longest_Path_in_DAG", "{0452A951-72FA-4A5A-BC31-A8DFBF1055D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_Shortst_Path_with_Negatives_Bellman-Ford", "Advanced\02. Graphs-Bellman-Ford-Longest-Path-in-DAG\01_Bellman-Ford\01_Shortst_Path_with_Negatives_Bellman-Ford.csproj", "{8E9B0AA2-C7B1-475C-91D5-C48B90941B20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_Longest_Path", "Advanced\02. Graphs-Bellman-Ford-Longest-Path-in-DAG\02_Longest_Path\02_Longest_Path.csproj", "{9E6734BE-2CBA-4DB6-9B3B-0968562C4DBD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -433,6 +439,14 @@ Global
 		{0C2B5D55-ECF7-4200-872D-B1AB2B03A39C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C2B5D55-ECF7-4200-872D-B1AB2B03A39C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C2B5D55-ECF7-4200-872D-B1AB2B03A39C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E9B0AA2-C7B1-475C-91D5-C48B90941B20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E9B0AA2-C7B1-475C-91D5-C48B90941B20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E9B0AA2-C7B1-475C-91D5-C48B90941B20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E9B0AA2-C7B1-475C-91D5-C48B90941B20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E6734BE-2CBA-4DB6-9B3B-0968562C4DBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E6734BE-2CBA-4DB6-9B3B-0968562C4DBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E6734BE-2CBA-4DB6-9B3B-0968562C4DBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E6734BE-2CBA-4DB6-9B3B-0968562C4DBD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -516,6 +530,9 @@ Global
 		{1EBCBEB5-05E1-473B-8525-1AA9E6F7E5AF} = {BDA873B5-34CD-41C5-8546-4157D96D5049}
 		{400DC319-BFC1-4EB9-9AD8-CC5987000FA5} = {BDA873B5-34CD-41C5-8546-4157D96D5049}
 		{0C2B5D55-ECF7-4200-872D-B1AB2B03A39C} = {BDA873B5-34CD-41C5-8546-4157D96D5049}
+		{0452A951-72FA-4A5A-BC31-A8DFBF1055D8} = {6429E5D9-B09F-4911-9C3F-2D3C3FD30658}
+		{8E9B0AA2-C7B1-475C-91D5-C48B90941B20} = {0452A951-72FA-4A5A-BC31-A8DFBF1055D8}
+		{9E6734BE-2CBA-4DB6-9B3B-0968562C4DBD} = {0452A951-72FA-4A5A-BC31-A8DFBF1055D8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {33E57215-D8FA-4D01-90FF-27AE165AE9A7}
