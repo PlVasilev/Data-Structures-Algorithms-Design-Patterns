@@ -165,9 +165,23 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03_MST_Prim", "Advanced\01.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02_Graphs_Bellman_Ford_Longest_Path_in_DAG", "02_Graphs_Bellman_Ford_Longest_Path_in_DAG", "{0452A951-72FA-4A5A-BC31-A8DFBF1055D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_Shortst_Path_with_Negatives_Bellman-Ford", "Advanced\02. Graphs-Bellman-Ford-Longest-Path-in-DAG\01_Bellman-Ford\01_Shortst_Path_with_Negatives_Bellman-Ford.csproj", "{8E9B0AA2-C7B1-475C-91D5-C48B90941B20}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_Shortst_Path_with_Negatives_Bellman-Ford", "Advanced\02. Graphs-Bellman-Ford-Longest-Path-in-DAG\01_Bellman-Ford\01_Shortst_Path_with_Negatives_Bellman-Ford.csproj", "{8E9B0AA2-C7B1-475C-91D5-C48B90941B20}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_Longest_Path", "Advanced\02. Graphs-Bellman-Ford-Longest-Path-in-DAG\02_Longest_Path\02_Longest_Path.csproj", "{9E6734BE-2CBA-4DB6-9B3B-0968562C4DBD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02_Longest_Path", "Advanced\02. Graphs-Bellman-Ford-Longest-Path-in-DAG\02_Longest_Path\02_Longest_Path.csproj", "{9E6734BE-2CBA-4DB6-9B3B-0968562C4DBD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03_Exercise-Graphs-Bellman-Ford-Longest-Path-in-DAG", "03_Exercise-Graphs-Bellman-Ford-Longest-Path-in-DAG", "{C96169ED-EDA7-4B4D-ABA7-376876769E4A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_Logest_Path_Most_Reliable_Path", "Advanced\03. Exercise-Graphs-Bellman-Ford-Longest-Path-in-DAG\01_Most_Reliable_Path\01_Logest_Path_Most_Reliable_Path.csproj", "{0D3C8687-1272-444F-B253-3A8FFD369977}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_MST_Cheap_Town_Tour", "Advanced\03. Exercise-Graphs-Bellman-Ford-Longest-Path-in-DAG\02_Cheap_Town_Tour\02_MST_Cheap_Town_Tour.csproj", "{1BEF4858-C1EA-4BF0-946C-B19082431E4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_Shortest_Path_Neg_Undefined", "Advanced\03. Exercise-Graphs-Bellman-Ford-Longest-Path-in-DAG\03_Undefined\03_Shortest_Path_Neg_Undefined.csproj", "{0EE74101-29C5-438A-AB35-527B58BD6EAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_Longest_Path_Neg_Big_Trip", "Advanced\03. Exercise-Graphs-Bellman-Ford-Longest-Path-in-DAG\04_Longest_Path_Big_Trip\04_Longest_Path_Neg_Big_Trip.csproj", "{B7A49577-E65A-4E27-AC00-CEC6449F9C8A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_MST_Cable_Network", "Advanced\03. Exercise-Graphs-Bellman-Ford-Longest-Path-in-DAG\05_Cable_Network\05_MST_Cable_Network.csproj", "{68F625B5-FB19-4DEB-82D0-7697F1F356FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_MST_Cable_Network_AS", "Advanced\03. Exercise-Graphs-Bellman-Ford-Longest-Path-in-DAG\05_Cable_Network_AS\05_MST_Cable_Network_AS.csproj", "{EE2EC622-1C36-4A31-AFA3-CEC925C4004E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -447,6 +461,30 @@ Global
 		{9E6734BE-2CBA-4DB6-9B3B-0968562C4DBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E6734BE-2CBA-4DB6-9B3B-0968562C4DBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9E6734BE-2CBA-4DB6-9B3B-0968562C4DBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D3C8687-1272-444F-B253-3A8FFD369977}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D3C8687-1272-444F-B253-3A8FFD369977}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D3C8687-1272-444F-B253-3A8FFD369977}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D3C8687-1272-444F-B253-3A8FFD369977}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BEF4858-C1EA-4BF0-946C-B19082431E4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BEF4858-C1EA-4BF0-946C-B19082431E4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BEF4858-C1EA-4BF0-946C-B19082431E4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BEF4858-C1EA-4BF0-946C-B19082431E4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EE74101-29C5-438A-AB35-527B58BD6EAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EE74101-29C5-438A-AB35-527B58BD6EAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EE74101-29C5-438A-AB35-527B58BD6EAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EE74101-29C5-438A-AB35-527B58BD6EAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7A49577-E65A-4E27-AC00-CEC6449F9C8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7A49577-E65A-4E27-AC00-CEC6449F9C8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7A49577-E65A-4E27-AC00-CEC6449F9C8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7A49577-E65A-4E27-AC00-CEC6449F9C8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68F625B5-FB19-4DEB-82D0-7697F1F356FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68F625B5-FB19-4DEB-82D0-7697F1F356FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68F625B5-FB19-4DEB-82D0-7697F1F356FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68F625B5-FB19-4DEB-82D0-7697F1F356FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE2EC622-1C36-4A31-AFA3-CEC925C4004E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE2EC622-1C36-4A31-AFA3-CEC925C4004E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE2EC622-1C36-4A31-AFA3-CEC925C4004E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE2EC622-1C36-4A31-AFA3-CEC925C4004E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -533,6 +571,13 @@ Global
 		{0452A951-72FA-4A5A-BC31-A8DFBF1055D8} = {6429E5D9-B09F-4911-9C3F-2D3C3FD30658}
 		{8E9B0AA2-C7B1-475C-91D5-C48B90941B20} = {0452A951-72FA-4A5A-BC31-A8DFBF1055D8}
 		{9E6734BE-2CBA-4DB6-9B3B-0968562C4DBD} = {0452A951-72FA-4A5A-BC31-A8DFBF1055D8}
+		{C96169ED-EDA7-4B4D-ABA7-376876769E4A} = {6429E5D9-B09F-4911-9C3F-2D3C3FD30658}
+		{0D3C8687-1272-444F-B253-3A8FFD369977} = {C96169ED-EDA7-4B4D-ABA7-376876769E4A}
+		{1BEF4858-C1EA-4BF0-946C-B19082431E4B} = {C96169ED-EDA7-4B4D-ABA7-376876769E4A}
+		{0EE74101-29C5-438A-AB35-527B58BD6EAF} = {C96169ED-EDA7-4B4D-ABA7-376876769E4A}
+		{B7A49577-E65A-4E27-AC00-CEC6449F9C8A} = {C96169ED-EDA7-4B4D-ABA7-376876769E4A}
+		{68F625B5-FB19-4DEB-82D0-7697F1F356FC} = {C96169ED-EDA7-4B4D-ABA7-376876769E4A}
+		{EE2EC622-1C36-4A31-AFA3-CEC925C4004E} = {C96169ED-EDA7-4B4D-ABA7-376876769E4A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {33E57215-D8FA-4D01-90FF-27AE165AE9A7}

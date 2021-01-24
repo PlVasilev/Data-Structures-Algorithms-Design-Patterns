@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace _01_Bellman_Ford
+namespace _03_Undefined
 {
     class Edge
     {
@@ -48,7 +48,7 @@ namespace _01_Bellman_Ford
 
                 foreach (var edge in _edges)
                 {
-                    if (double.IsPositiveInfinity(edge.From)) continue;
+                    if (double.IsPositiveInfinity(distances[edge.From])) continue;
 
                     var newDistance = distances[edge.From] + edge.Weight;
                     if (newDistance < distances[edge.To])
@@ -68,7 +68,7 @@ namespace _01_Bellman_Ford
                 var newDistance = distances[edge.From] + edge.Weight;
                 if (newDistance < distances[edge.To])
                 {
-                    Console.WriteLine("Negative Cycle Detected");
+                    Console.WriteLine("Undefined");
                     return;
                 }
             }
