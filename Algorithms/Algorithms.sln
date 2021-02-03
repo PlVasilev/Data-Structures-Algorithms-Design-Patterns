@@ -185,11 +185,29 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05_MST_Cable_Network_AS", "
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04_Graphs-Strongly-Connected-Components-Max-Flow", "04_Graphs-Strongly-Connected-Components-Max-Flow", "{81F97627-2A42-486E-91E7-AE0447CCA0FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_Strongly_Connected_Components_SCC", "Advanced\04. Graphs-Strongly-Connected-Components-Max-Flow\01_Strongly_Connected_Components_SCC\01_Strongly_Connected_Components_SCC.csproj", "{DF070D3A-7713-4AE4-94C5-6EA5C1B6E027}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_Strongly_Connected_Components_SCC", "Advanced\04. Graphs-Strongly-Connected-Components-Max-Flow\01_Strongly_Connected_Components_SCC\01_Strongly_Connected_Components_SCC.csproj", "{DF070D3A-7713-4AE4-94C5-6EA5C1B6E027}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_Max_Flow_Algorithm-Edmonds-Karp", "Advanced\04. Graphs-Strongly-Connected-Components-Max-Flow\02_Max_Flow_Algorithm-Edmonds-Karp\02_Max_Flow_Algorithm-Edmonds-Karp.csproj", "{8E642613-8D42-4E59-A5B6-A134C7BE9ED2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02_Max_Flow_Algorithm-Edmonds-Karp", "Advanced\04. Graphs-Strongly-Connected-Components-Max-Flow\02_Max_Flow_Algorithm-Edmonds-Karp\02_Max_Flow_Algorithm-Edmonds-Karp.csproj", "{8E642613-8D42-4E59-A5B6-A134C7BE9ED2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_Articulation_Points", "Advanced\04. Graphs-Strongly-Connected-Components-Max-Flow\03_Articulation_Points\03_Articulation_Points.csproj", "{061F3841-0A22-4976-A6E2-33C874546C6A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03_Articulation_Points", "Advanced\04. Graphs-Strongly-Connected-Components-Max-Flow\03_Articulation_Points\03_Articulation_Points.csproj", "{061F3841-0A22-4976-A6E2-33C874546C6A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05_Exercise_Graphs_Strongly_Connected_Components_Max_Flow", "05_Exercise_Graphs_Strongly_Connected_Components_Max_Flow", "{BC305FF1-5F5D-4A47-AB34-48EFE022B7F8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_Electrical_Substation_Network", "Advanced\05. Exercise_Graphs_Strongly_Connected_Components_Max_Flow\01_Electrical_Substation_Network\01_Electrical_Substation_Network.csproj", "{2BE0C04A-1E71-4560-91AE-C204CA53BA14}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02_Maximum_Tasks_Assignment", "Advanced\05. Exercise_Graphs_Strongly_Connected_Components_Max_Flow\02_Maximum_Tasks_Assignment\02_Maximum_Tasks_Assignment.csproj", "{5D414786-8573-403D-98D8-3ABF44CFE34B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03_Find_Bi-Connected_Components", "Advanced\05. Exercise_Graphs_Strongly_Connected_Components_Max_Flow\03_Find_Bi-Connected_Components\03_Find_Bi-Connected_Components.csproj", "{04400853-6842-40A3-8669-3284287D4F9C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03_Find_Bi-Connected_Components_AS", "Advanced\05. Exercise_Graphs_Strongly_Connected_Components_Max_Flow\03_Find_Bi-Connected_Components_AS\03_Find_Bi-Connected_Components_AS.csproj", "{35FB613D-B14B-4D99-8CB4-FB46B5F37E36}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06_Dynamic-Programming-Advanced-Presentation", "06_Dynamic-Programming-Advanced-Presentation", "{2463DAF6-6AB9-48AD-8C94-7DC67D817E7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_Rod_Cutting", "Advanced\06. Dynamic-Programming-Advanced-Presentation\01_Best_For_Price_Rod_Cutting\01_Rod_Cutting.csproj", "{90578CC2-F2DF-439B-BD17-C72B0936C9FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_Knapsack", "Advanced\06. Dynamic-Programming-Advanced-Presentation\02_Knapsack\02_Knapsack.csproj", "{E9D6607C-CA7D-435C-8BEF-C5A04B3F6F76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_Longest_Increasing_Subsequence", "Advanced\06. Dynamic-Programming-Advanced-Presentation\03_Longest_Increasing_Subsequence\03_Longest_Increasing_Subsequence.csproj", "{6A2F2C9A-7873-477C-80EF-C493E63711ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -505,6 +523,34 @@ Global
 		{061F3841-0A22-4976-A6E2-33C874546C6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{061F3841-0A22-4976-A6E2-33C874546C6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{061F3841-0A22-4976-A6E2-33C874546C6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BE0C04A-1E71-4560-91AE-C204CA53BA14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BE0C04A-1E71-4560-91AE-C204CA53BA14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BE0C04A-1E71-4560-91AE-C204CA53BA14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BE0C04A-1E71-4560-91AE-C204CA53BA14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D414786-8573-403D-98D8-3ABF44CFE34B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D414786-8573-403D-98D8-3ABF44CFE34B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D414786-8573-403D-98D8-3ABF44CFE34B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D414786-8573-403D-98D8-3ABF44CFE34B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04400853-6842-40A3-8669-3284287D4F9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04400853-6842-40A3-8669-3284287D4F9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04400853-6842-40A3-8669-3284287D4F9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04400853-6842-40A3-8669-3284287D4F9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35FB613D-B14B-4D99-8CB4-FB46B5F37E36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35FB613D-B14B-4D99-8CB4-FB46B5F37E36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35FB613D-B14B-4D99-8CB4-FB46B5F37E36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35FB613D-B14B-4D99-8CB4-FB46B5F37E36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90578CC2-F2DF-439B-BD17-C72B0936C9FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90578CC2-F2DF-439B-BD17-C72B0936C9FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90578CC2-F2DF-439B-BD17-C72B0936C9FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90578CC2-F2DF-439B-BD17-C72B0936C9FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9D6607C-CA7D-435C-8BEF-C5A04B3F6F76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9D6607C-CA7D-435C-8BEF-C5A04B3F6F76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9D6607C-CA7D-435C-8BEF-C5A04B3F6F76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9D6607C-CA7D-435C-8BEF-C5A04B3F6F76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A2F2C9A-7873-477C-80EF-C493E63711ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A2F2C9A-7873-477C-80EF-C493E63711ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A2F2C9A-7873-477C-80EF-C493E63711ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A2F2C9A-7873-477C-80EF-C493E63711ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -602,6 +648,15 @@ Global
 		{DF070D3A-7713-4AE4-94C5-6EA5C1B6E027} = {81F97627-2A42-486E-91E7-AE0447CCA0FB}
 		{8E642613-8D42-4E59-A5B6-A134C7BE9ED2} = {81F97627-2A42-486E-91E7-AE0447CCA0FB}
 		{061F3841-0A22-4976-A6E2-33C874546C6A} = {81F97627-2A42-486E-91E7-AE0447CCA0FB}
+		{BC305FF1-5F5D-4A47-AB34-48EFE022B7F8} = {6429E5D9-B09F-4911-9C3F-2D3C3FD30658}
+		{2BE0C04A-1E71-4560-91AE-C204CA53BA14} = {BC305FF1-5F5D-4A47-AB34-48EFE022B7F8}
+		{5D414786-8573-403D-98D8-3ABF44CFE34B} = {BC305FF1-5F5D-4A47-AB34-48EFE022B7F8}
+		{04400853-6842-40A3-8669-3284287D4F9C} = {BC305FF1-5F5D-4A47-AB34-48EFE022B7F8}
+		{35FB613D-B14B-4D99-8CB4-FB46B5F37E36} = {BC305FF1-5F5D-4A47-AB34-48EFE022B7F8}
+		{2463DAF6-6AB9-48AD-8C94-7DC67D817E7E} = {6429E5D9-B09F-4911-9C3F-2D3C3FD30658}
+		{90578CC2-F2DF-439B-BD17-C72B0936C9FB} = {2463DAF6-6AB9-48AD-8C94-7DC67D817E7E}
+		{E9D6607C-CA7D-435C-8BEF-C5A04B3F6F76} = {2463DAF6-6AB9-48AD-8C94-7DC67D817E7E}
+		{6A2F2C9A-7873-477C-80EF-C493E63711ED} = {2463DAF6-6AB9-48AD-8C94-7DC67D817E7E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {33E57215-D8FA-4D01-90FF-27AE165AE9A7}
