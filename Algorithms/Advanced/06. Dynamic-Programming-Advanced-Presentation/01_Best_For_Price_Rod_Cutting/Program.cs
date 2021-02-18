@@ -29,7 +29,6 @@ namespace _01_Best_For_Price_Rod_Cutting
                         bestCombo = j;
                     }
                 }
-
                 _bestPrices[i] = bestPrice;
                 _bestCombo[i] = bestCombo;
             }
@@ -43,14 +42,14 @@ namespace _01_Best_For_Price_Rod_Cutting
             }
 
 
-            // CutRod(length, prices);
-            // Console.WriteLine(_bestPrices[length]);
+            //CutRod(length, prices);
+            //Console.WriteLine(_bestPrices[length]);
             //
-            // while (length != 0)
-            // {
-            //     Console.Write($"{_bestCombo[length]} ");
-            //     length -= _bestCombo[length];
-            // }
+            //while (length != 0)
+            //{
+            //    Console.Write($"{_bestCombo[length]} ");
+            //    length -= _bestCombo[length];
+            //}
         }
 
         private static int CutRod(int length, int[] prices)

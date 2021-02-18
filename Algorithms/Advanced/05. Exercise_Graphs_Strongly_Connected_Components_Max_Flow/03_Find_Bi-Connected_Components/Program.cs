@@ -43,12 +43,12 @@ namespace _03_Find_Bi_Connected_Components
                     _components.Add(component);
                 }
             }
-            // Console.WriteLine($"Articulation points: {string.Join(", ", ArticulationPoints)}");
+            Console.WriteLine($"Articulation points: {string.Join(", ", ArticulationPoints)}");
             Console.WriteLine($"Number of bi-connected components: {_components.Count}");
-            // foreach (var component in _components)
-            // {
-            //     Console.WriteLine(string.Join(" ", component));
-            // }
+           foreach (var component in _components)
+           {
+               Console.WriteLine(string.Join(" ", component));
+           }
         }
 
 

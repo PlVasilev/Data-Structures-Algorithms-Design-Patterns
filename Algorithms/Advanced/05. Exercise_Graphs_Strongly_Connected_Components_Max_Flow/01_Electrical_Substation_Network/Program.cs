@@ -50,7 +50,7 @@ namespace _01_Electrical_Substation_Network
                 DFS(node, visited, result);
             return result;
         }
-
+         
         private static void DFS(int node, bool[] visited, Stack<int> stack)
         {
             if (visited[node]) return;
