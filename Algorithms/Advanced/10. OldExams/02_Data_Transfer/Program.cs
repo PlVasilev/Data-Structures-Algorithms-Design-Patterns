@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace _02_Max_Flow_Algorithm_Edmonds_Karp
+namespace _02_Data_Transfer
 {
     class Program
     {
@@ -12,27 +12,34 @@ namespace _02_Max_Flow_Algorithm_Edmonds_Karp
         static void Main(string[] args)
         {
             var nodes = int.Parse(Console.ReadLine());
-            _graph = ReadGraph(nodes);
+            var connections = int.Parse(Console.ReadLine());
+            var startEnd = Console.ReadLine().Split().Select(int.Parse).ToArray();
+            var source = startEnd[0];
+            var target = startEnd[1];
+
+            _graph = ReadGraph(nodes, connections);
             _parents = new int[nodes];
             Array.Fill(_parents, -1);
 
-            var source = int.Parse(Console.ReadLine());
-            var target = int.Parse(Console.ReadLine());
+
             var maxFlow = 0;
 
-            while (BFS(source,target))
+            while (BFS(source, target))
             {
                 //Find min flow
                 var currentFlow = GetCurrentFlow(source, target);
+
                 // max flow += min flow
                 maxFlow += currentFlow;
+
                 // Modify capacities
                 ApplyCurrentFlow(source, target, currentFlow);
             }
+
             Console.WriteLine($"Max flow = {maxFlow}");
         }
 
-        private static void ApplyCurrentFlow(int source,int target,int currentFlow)
+        private static void ApplyCurrentFlow(int source, int target, int currentFlow)
         {
             var node = target;
             while (node != source)
@@ -43,7 +50,7 @@ namespace _02_Max_Flow_Algorithm_Edmonds_Karp
             }
         }
 
-        private static int GetCurrentFlow(int source,int target)
+        private static int GetCurrentFlow(int source, int target)
         {
             var node = target;
             var minFlow = int.MaxValue;
@@ -58,7 +65,7 @@ namespace _02_Max_Flow_Algorithm_Edmonds_Karp
             return minFlow;
         }
 
-        private static bool BFS(int source,int target)
+        private static bool BFS(int source, int target)
         {
             var queue = new Queue<int>();
             var visited = new bool[_graph.GetLength(0)];
@@ -81,17 +88,14 @@ namespace _02_Max_Flow_Algorithm_Edmonds_Karp
             return visited[target];
         }
 
-        private static int[,] ReadGraph(int nodes)
+        private static int[,] ReadGraph(int nodes, int connections)
         {
-            var result = new int[nodes,nodes];
-            for (int i = 0; i < nodes; i++)
+            var result = new int[nodes, nodes];
+            for (int i = 0; i < connections; i++)
             {
-                var capacities = Console.ReadLine().Split(", ").Select(int.Parse).ToArray();
-                for (int j = 0; j < capacities.Length; j++)
-                {
-                    var capacity = capacities[j];
-                    result[i, j] = capacity;
-                }
+                var capacities = Console.ReadLine().Split(" ").Select(int.Parse).ToArray();
+                result[capacities[0], capacities[1]] = capacities[2];
+
             }
             return result;
         }

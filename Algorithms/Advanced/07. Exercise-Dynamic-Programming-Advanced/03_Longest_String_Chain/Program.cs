@@ -29,13 +29,13 @@ namespace _03_Longest_String_Chain
                 for (int j = i - 1; j >= 0; j--)
                 {
                     var prevNumber = numbers[j];
-                    if (prevNumber < currentNumber && length[j] + 1 >= currentBestSq) // > right most >= left most
+                    if (prevNumber < currentNumber && length[j] + 1 >= currentBestSq) 
                     {
                         currentBestSq = length[j] + 1;
                         prev[i] = j;
                     }
                 }
-                if (currentBestSq > bestLength)
+                if (currentBestSq > bestLength) // >= right most > left most
                 {
                     bestLength = currentBestSq;
                     lastIndex = i;

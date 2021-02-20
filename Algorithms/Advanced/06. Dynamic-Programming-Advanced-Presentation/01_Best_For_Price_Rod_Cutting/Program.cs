@@ -15,8 +15,6 @@ namespace _01_Best_For_Price_Rod_Cutting
             _bestPrices = new int[length + 1];
             _bestCombo = new int[length + 1];
 
-
-
             for (int i = 1; i <= length; i++)
             {
                 var bestPrice = prices[i];
@@ -40,7 +38,6 @@ namespace _01_Best_For_Price_Rod_Cutting
                 Console.Write($"{_bestCombo[length]} ");
                 length -= _bestCombo[length];
             }
-
 
             //CutRod(length, prices);
             //Console.WriteLine(_bestPrices[length]);

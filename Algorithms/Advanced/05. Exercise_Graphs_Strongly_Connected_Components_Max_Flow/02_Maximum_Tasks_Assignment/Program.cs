@@ -20,7 +20,7 @@ namespace _02_Maximum_Tasks_Assignment
 
             _parents = new int[nodes];
             Array.Fill(_parents, -1);
-            // PrintMatrix();
+            PrintMatrix();
             var start = 0;
             var target = nodes - 1;
 
@@ -35,7 +35,7 @@ namespace _02_Maximum_Tasks_Assignment
                     node = parent;
                 }
             }
-            // PrintMatrix();
+            PrintMatrix();
             for (int person = 1; person <= people; person++)
                 for (int task = people + 1; task <= people + tasks; task++)
                     if (_graph[task, person] > 0)

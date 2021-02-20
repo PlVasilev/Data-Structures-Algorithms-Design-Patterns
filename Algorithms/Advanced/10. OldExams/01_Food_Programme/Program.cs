@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Wintellect.PowerCollections;
 
-namespace _01_Le_Tour_de_Sofia
+namespace _01_Food_Programme
 {
     class Edge
     {
@@ -19,76 +19,78 @@ namespace _01_Le_Tour_de_Sofia
         static void Main(string[] args)
         {
             // var queue = new OrderedBag<int>(Comparer<int>.Create((f, s) => s - f));
-            var v = int.Parse(Console.ReadLine() ?? string.Empty);
+            var v = int.Parse(Console.ReadLine());
             var e = int.Parse(Console.ReadLine() ?? string.Empty);
-            var start = int.Parse(Console.ReadLine() ?? string.Empty);
-            var end = start;
 
-            _edgesByNode = ReadGraph(e, v);
+            var startEnd = Console.ReadLine().Split().Select(int.Parse).ToArray();
+            var start = startEnd[0];
+            var end = startEnd[1];
+
+            _edgesByNode = ReadGraph(e);
+
             var maxNode = _edgesByNode.Keys.Max();
 
-            var distances = new double[v];
+            var distances = new int[maxNode + 1];
             for (int i = 0; i < distances.Length; i++) // // Framework C# code
-                distances[i] = double.PositiveInfinity;
+                distances[i] = int.MaxValue;
 
 
             distances[start] = 0;
 
-            var prev = new int[v];
+            var prev = new int[maxNode + 1];
             prev[start] = -1;
 
-           // var next = new int[maxNode + 1];
-           // for (int i = 0; i < next.Length; i++)
-           // {
-           //     next[i] = -1;
-           // }
-
             var queue = new OrderedBag<int>(
-                Comparer<int>.Create((f, s) => distances[f].CompareTo(distances[s]))) { start };
-            var begin = true;
+                Comparer<int>.Create((f, s) => distances[f] - distances[s])) { start };
 
             while (queue.Count > 0)
             {
                 var minNode = queue.RemoveFirst();
                 var children = _edgesByNode[minNode];
 
-                if ((minNode == end && !begin) || double.IsPositiveInfinity(distances[minNode]))
+                if (minNode == end || distances[minNode] == int.MaxValue)
                     break;
 
-                begin = false;
                 foreach (var child in children)
                 {
                     var childNode = child.First == minNode ? child.Second : child.First;
 
-                    if (double.IsPositiveInfinity(distances[childNode]))
+                    if (distances[childNode] == int.MaxValue)
                         queue.Add(childNode);
 
                     var newDistance = child.Weight + distances[minNode];
-                    if (childNode == end && Math.Abs(distances[end]) < 0.01)
-                    {
-                        distances[end] = double.PositiveInfinity;
-                    }
 
                     if (newDistance >= distances[childNode]) continue;
                     distances[childNode] = newDistance;
                     prev[childNode] = minNode;
-                  //  next[minNode] = childNode;
-                    queue = new OrderedBag<int>(queue, Comparer<int>.Create((f, s) => distances[f].CompareTo(distances[s])));
+                    queue = new OrderedBag<int>(queue, Comparer<int>.Create((f, s) => distances[f] - distances[s]));
                 }
             }
 
-            Console.WriteLine(Math.Abs(distances[end]) < 0.01
-                ? distances.Where(x => !double.IsPositiveInfinity(x)).ToList().Count
-                : distances[end]);
+            if (distances[end] == int.MaxValue)
+            {
+                Console.WriteLine("There is no such path.");
+                return;
+            }
+
+            
+
+            var path = new Stack<int>();
+
+            var node = end;
+            while (node != -1)
+            {
+                path.Push(node);
+                node = prev[node];
+            }
+
+            Console.WriteLine(string.Join(" ", path));
+            Console.WriteLine(distances[end]);
         }
 
-        private static Dictionary<int, List<Edge>> ReadGraph(int e, int v)
+        private static Dictionary<int, List<Edge>> ReadGraph(int e)
         {
             var result = new Dictionary<int, List<Edge>>();
-            for (int i = 0; i < v; i++)
-            {
-                result[i] =  new List<Edge>();
-            }
 
             for (int i = 0; i < e; i++)
             {
@@ -105,8 +107,8 @@ namespace _01_Le_Tour_de_Sofia
                 if (!result.ContainsKey(firstNode))
                     result.Add(firstNode, new List<Edge>());
 
-                // if (!result.ContainsKey(secondNode))
-                //     result.Add(secondNode, new List<Edge>());
+                if (!result.ContainsKey(secondNode))
+                    result.Add(secondNode, new List<Edge>());
 
                 var edge = new Edge
                 {
@@ -116,7 +118,7 @@ namespace _01_Le_Tour_de_Sofia
                 };
 
                 result[firstNode].Add(edge);
-                // result[secondNode].Add(edge);
+                result[secondNode].Add(edge);
             }
             return result;
         }
