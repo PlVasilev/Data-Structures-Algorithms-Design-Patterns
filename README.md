@@ -15,7 +15,6 @@ SoftUni Courses
 09. Exercises
 
 ### Advanced
-
 01. B-Trees-2-3-Trees-and-AVL-Trees
 02. B-Trees-2-3-Trees-and-AVL-Trees-Exercise
 03. Red-Black-Trees-and-AA-Trees
@@ -24,3 +23,33 @@ SoftUni Courses
 06. Hash-Tables-Sets-and-Dictionaries-Exercise
 07. Data-Structures-Advanced-Data-Structures-Augmentation
 08. Exam-Preparation
+
+## Algorithms
+
+### Fundamentals
+01. Recursion-And-Backtracking
+02. Combinatorial-Problems
+03. Searching-Sorting-And-Greedy
+04. Graphs-And-Graph-Algorithms
+05. Introduction-to-Dynamic-Programming
+06. Recursion-and-Combinatorial-Problems-Exercise
+07. Graph-Theory-Traversal-and-Shortest-Paths-Exercise
+08. Introduction-to-Dynamic-Programming-Exercise
+09. Exam-Prep
+10. Prev-Exams
+11. Exam
+
+### Advanced
+01. Graphs-Dijkstra-MST
+02. Graphs-Bellman-Ford-Longest-Path-in-DAG
+03. Exercise-Graphs-Bellman-Ford-Longest-Path-in-DAG
+04. Graphs-Strongly-Connected-Components-Max-Flow
+05. Exercise-Graphs-Strongly-Connected-Components-Max-Flow
+06. Dynamic-Programming-Advanced-Presentation
+07. Exercise-Dynamic-Programming-Advanced
+08. Amortization-and-Problem-Classification-Presentation
+09. Exam-Prep
+10. Prev-Exams
+11. Exam
+
+
