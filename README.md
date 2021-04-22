@@ -52,4 +52,12 @@ SoftUni Courses
 10. Prev-Exams
 11. Exam
 
+## Design Patterns
+
+### Creational
+01. AbstractFactory
+02. Builder
+03. FactoryMethod
+04. Prototype
+05. Singleton
 
