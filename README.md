@@ -61,3 +61,11 @@ SoftUni Courses
 04. Prototype
 05. Singleton
 
+### Structural
+01. Adapter
+02. Bridge
+03. Composite
+04. Decorator
+05. Facade
+06. Flyweight
+07. Proxy
