@@ -70,7 +70,7 @@ SoftUni Courses
 06. Flyweight - A fine-grained instance used for efficient sharing
 07. Proxy - An object representing another object
 
-### 
+### Behavioral
 1. Chain of Resp. - A way of passing a request between a chain of objects
 2. Command - Encapsulate a command request as an object
 3. Interpreter - A way to include language elements in a program
